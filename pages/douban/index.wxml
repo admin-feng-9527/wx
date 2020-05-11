@@ -1,7 +1,4 @@
 <!--pages/douban/index.wxml-->
-<view>
-<icon></icon>
-</view>
 <swiper style="height:450rpx" indicator-dots autoplay="true" interval="5000" duration="1000">
 	<swiper-item wx:for="{{ boards[0].movies }}" wx:key="{{ item.id }}">
 		<navigator url="item?id={{item.id}}" hover-class="none">
@@ -37,7 +34,7 @@
 	</view>
 </view>
 
-<!-- <view class="weui-search-bar" style="position:absolute; top:0; width:100%; opacity: .8;">
+<view class="weui-search-bar" style="position:absolute; top:0; width:100%; opacity: .8;">
 	<navigator url="search" class="weui-search-bar__form">
 		<view class="weui-search-bar__box">
 			<icon class="weui-icon-search_in-box" type="search" size="14"></icon>
@@ -48,4 +45,4 @@
 			<view class="weui-search-bar__text">搜索</view>
 		</label>
 	</navigator>
-</view> -->
+</view>
